@@ -2,8 +2,8 @@ import React, { ReactElement, useCallback } from 'react'
 import { SafeAreaView, Text, Button } from 'react-native'
 import { useSelector } from 'react-redux'
 
-import * as actions from 'src/core/core.actions'
-import * as selectors from 'src/core/core.selectors'
+import * as actions from 'src/modules/core/core.actions'
+import * as selectors from 'src/modules/core/core.selectors'
 
 import ErrorCancel from 'src/assets/images/ErrorCancel-Image.svg'
 import { useReduxDispatch } from 'src/helpers'

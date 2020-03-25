@@ -13,9 +13,9 @@ import serverErrorInterceptor from './api/serverErrorInterceptor'
 import { requestHttp } from './api'
 import { PATHS } from './constants'
 
-import { Root } from 'src/core'
-import { SignInContainer } from 'src/signIn'
-import { HomeContainer } from './home'
+import { Root } from 'src/modules/core'
+import { SignInContainer } from 'src/modules/signIn'
+import { HomeContainer } from 'src/modules/home'
 
 const Tab = createBottomTabNavigator()
 const Stack = createStackNavigator()

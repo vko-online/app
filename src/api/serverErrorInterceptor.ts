@@ -3,7 +3,7 @@ import { AxiosResponse } from 'axios'
 import get from 'lodash/get'
 import { navigate } from 'src/navigation'
 
-import * as coreActions from 'src/core/core.actions'
+import * as coreActions from 'src/modules/core/core.actions'
 import { PATHS } from 'src/constants'
 
 const STATUS_CODES_TO_SKIP = [401, 422]

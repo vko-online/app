@@ -12,11 +12,7 @@ export default function HomeContainer (): ReactElement {
     <SafeAreaView>
       <Portal>
         <Appbar.Header>
-          <Appbar.BackAction />
-          <Appbar.Content
-            title='Title'
-            subtitle='Subtitle'
-          />
+          <Appbar.Content title='My Awesome App' />
           <Appbar.Action icon='magnify' />
           <Menu
             visible={menuVisible}

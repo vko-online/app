@@ -2,8 +2,8 @@ import React, { useEffect, useCallback, ReactElement } from 'react'
 import { ActivityIndicator } from 'react-native'
 import { useSelector } from 'react-redux'
 
-import * as actions from 'src/core/core.actions'
-import * as selectors from 'src/core/core.selectors'
+import * as actions from 'src/modules/core/core.actions'
+import * as selectors from 'src/modules/core/core.selectors'
 import { PATHS, LOCAL_STORAGE_KEYS } from 'src/constants'
 import { ServerError } from '../containers'
 

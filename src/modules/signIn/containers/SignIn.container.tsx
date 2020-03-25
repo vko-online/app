@@ -6,9 +6,9 @@ import { Formik, FormikBag, FormikValues } from 'formik'
 import * as yup from 'yup'
 import Pane from 'view-on-steroids'
 
-import * as actions from 'src/signIn/signIn.actions'
-import { MODULE_NAME } from 'src/signIn/signIn.constants'
-import * as selectors from 'src/signIn/signIn.selectors'
+import * as actions from 'src/modules/signIn/signIn.actions'
+import { MODULE_NAME } from 'src/modules/signIn/signIn.constants'
+import * as selectors from 'src/modules/signIn/signIn.selectors'
 import { useReduxDispatch } from 'src/helpers'
 import { PATHS } from 'src/constants'
 import { reset } from 'src/navigation'
@@ -78,7 +78,12 @@ export default function SignInContainer ({}: Props): ReactElement {
                 <HelperText>{errors.password}</HelperText>
               ) : null
             }
-            <Button disabled={!isValid} onPress={handleSubmit}>Sign in</Button>
+            <Pane marginTop={20}>
+              <Button
+                disabled={!isValid}
+                mode='contained'
+                onPress={handleSubmit}>Sign in</Button>
+            </Pane>
           </Pane>
         )}
       </Formik>

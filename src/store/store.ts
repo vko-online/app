@@ -12,15 +12,15 @@ import {
   reducer as rootReducer,
   MODULE_NAME as CORE_MODULE_NAME,
   initialState as coreInitialState
-} from 'src/core'
+} from 'src/modules/core'
 import {
   reducer as signInReducer,
   MODULE_NAME as SIGN_IN_MODULE_NAME
-} from 'src/signIn'
+} from 'src/modules/signIn'
 import {
   reducer as homeReducer,
   MODULE_NAME as HOME_MODULE_NAME
-} from 'src/home'
+} from 'src/modules/home'
 
 const createRootReducer = (): Reducer => {
   return combineReducers({
